@@ -1,7 +1,16 @@
-Features,Test Size,Accuracy,Notes
-" Age (yrs), BMI, Cycle length(days), Pregnant(Y/N), FSH(mIU/mL), LH(mIU/mL), FSH/LH, TSH (mIU/L), AMH(ng/mL), Waist:Hip Ratio",0.25,0.7185,Logistic Regression model
-"Age (yrs), Weight (Kg), Height(Cm), BMI, Blood Group, Pulse rate(bpm), RR (breaths/min), Hb(g/dl), Cycle(R/I), Cycle length(days), Marraige Status (Yrs), Pregnant(Y/N), No. of aborptions, FSH(mIU/mL), LH(mIU/mL), FSH/LH, Hip(inch), Waist(inch), Waist:Hip Ratio, TSH (mIU/L), AMH(ng/mL), PRL(ng/mL), Vit D3 (ng/mL), PRG(ng/mL), RBS(mg/dl), Weight gain(Y/N), hair growth(Y/N), Skin darkening (Y/N), Hair loss(Y/N), Pimples(Y/N), Fast food (Y/N), Reg.Exercise(Y/N), BP _Systolic (mmHg), BP _Diastolic (mmHg), Follicle No. (L), Follicle No. (R), Avg. F size (L) (mm), Avg. F size (R) (mm), Endometrium (mm)",0.25,0.8963,Logistic Regression model - on all features
-"Cycle(R/I), Cycle length(days), Weight gain(Y/N), hair growth(Y/N), Skin darkening (Y/N), Hair loss(Y/N), Pimples(Y/N), Fast food (Y/N), Reg.Exercise(Y/N)",0.25,0.8148,Logistic Regression model - on all features
-"Cycle(R/I), Cycle length(days), Weight gain(Y/N), hair growth(Y/N), Skin darkening (Y/N), Hair loss(Y/N), Pimples(Y/N), Fast food (Y/N), Reg.Exercise(Y/N), Weight (Kg), Height(Cm), BMI, Pulse rate(bpm), RR (breaths/min), Hb(g/dl), Hip(inch), Waist(inch), Waist:Hip Ratio, BP _Systolic (mmHg), BP _Diastolic (mmHg), Follicle No. (L), Follicle No. (R), Avg. F size (L) (mm), Avg. F size (R) (mm), Endometrium (mm)",0.25,0.8741,Logistic Regression model - on all features
-"FSH(mIU/mL), LH(mIU/mL), FSH/LH, AMH(ng/mL), TSH (mIU/L), PRL(ng/mL), PRG(ng/mL)",0.25,0.6741,Logistic Regression model - on all features
-"FSH(mIU/mL), LH(mIU/mL), FSH/LH, AMH(ng/mL), TSH (mIU/L), PRL(ng/mL), PRG(ng/mL)",0.25,0.6741,Logistic Regression model - on all features
+Model,Feature_Set,Test_Size,Class_Weight,Threshold,Accuracy,Precision,Recall,TN,FP,FN,TP
+LogisticRegression,hormone_features,0.25,"{0: 1, 1: 2}",0.5,0.6444,0.4107,0.6053,64,33,15,23
+LogisticRegression,hormone_features,0.25,"{0: 1, 1: 2}",0.4,0.4741,0.3226,0.7895,34,63,8,30
+LogisticRegression,hormone_features,0.25,"{0: 1, 1: 2}",0.3,0.2815,0.2748,0.9474,2,95,2,36
+LogisticRegression,hormone_features,0.25,"{0: 1, 1: 2}",0.6,0.6889,0.4412,0.3947,78,19,23,15
+LogisticRegression,hormone_features,0.25,"{0: 1, 1: 2}",0.7,0.7333,0.55,0.2895,88,9,27,11
+LogisticRegression,hormone_features,0.25,"{0: 1, 1: 2}",0.65,0.7037,0.4615,0.3158,83,14,26,12
+LogisticRegression,hormone_features,0.25,"{0: 1, 1: 2}",0.63,0.6963,0.4483,0.3421,81,16,25,13
+LogisticRegression,patient_observable_features,0.25,"{0: 1, 1: 2}",0.5,0.8296,0.6471,0.8684,79,18,5,33
+LogisticRegression,patient_observable_features,0.25,"{0: 1, 1: 2}",0.4,0.7778,0.5645,0.9211,70,27,3,35
+LogisticRegression,patient_observable_features,0.25,"{0: 1, 1: 2}",0.3,0.6889,0.4737,0.9474,57,40,2,36
+LogisticRegression,patient_observable_features,0.25,"{0: 1, 1: 2}",0.6,0.8593,0.7111,0.8421,84,13,6,32
+LogisticRegression,patient_observable_features,0.25,"{0: 1, 1: 2}",0.7,0.8519,0.7647,0.6842,89,8,12,26
+LogisticRegression,patient_observable_features,0.25,"{0: 1, 1: 2}",0.65,0.8519,0.7368,0.7368,87,10,10,28
+LogisticRegression,patient_observable_features,0.25,"{0: 1, 1: 2}",0.63,0.8444,0.7073,0.7632,85,12,9,29
+LogisticRegression,patient_observable_features,0.25,"{0: 1, 1: 2}",0.63,0.8444,0.7073,0.7632,85,12,9,29
