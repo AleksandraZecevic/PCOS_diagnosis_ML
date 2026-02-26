@@ -1,0 +1,17 @@
+Feature_Set,Model,Accuracy,Recall_1,Precision_1,F1_1,TN,FP,FN,TP
+doctor_observable_features,Logistic Regression,0.8519,0.9565,0.7097,0.8148,71,18,2,44
+doctor_observable_features,Random Forest,0.9259,0.9565,0.8462,0.898,81,8,2,44
+doctor_observable_features,ANN,0.8593,0.8043,0.7872,0.7957,79,10,9,37
+hormone_features,Logistic Regression,0.4667,0.7556,0.3579,0.4857,29,61,11,34
+hormone_features,Random Forest,0.6889,0.6222,0.5283,0.5714,65,25,17,28
+hormone_features,ANN,0.3926,0.9111,0.3445,0.5,12,78,4,41
+patient_observable_features,Logistic Regression,0.8148,0.8043,0.6981,0.7475,73,16,9,37
+patient_observable_features,Random Forest,0.8148,0.6957,0.7442,0.7191,78,11,14,32
+patient_observable_features,ANN,0.837,0.7826,0.75,0.766,77,12,10,36
+all_features,Logistic Regression,0.837,0.8421,0.6667,0.7442,81,16,6,32
+all_features,Random Forest,0.8889,0.7895,0.8108,0.8,90,7,8,30
+all_features,ANN,0.8519,0.7632,0.725,0.7436,86,11,9,29
+,,,,,,,,,
+MAX acc ,0.9259,,,,,,,,
+MAX recall,0.9565,,,,,,,,
+MAX f1,0.898,,,,,,,,
